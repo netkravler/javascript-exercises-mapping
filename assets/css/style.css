@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  border: solid 2px red;
+  display: flex;
+  max-width: 80vw;
+  margin: auto;
+}
+
+#mother {
+  flex: 3;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 40px;
+}
+
+#father {
+  padding: 40px;
+  flex: 2;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.container h4 {
+  text-transform: capitalize;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
