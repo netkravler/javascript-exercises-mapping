@@ -90,3 +90,6 @@ const createElement = (data) => {
 };
 
 data.map((person) => createElements(person));
+//** map over every object in the data array */
+//** init the "app" with the first person in data array */
+filterPerson(data[0].id);

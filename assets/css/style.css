@@ -5,7 +5,6 @@
 }
 
 #container {
-  border: solid 2px red;
   display: flex;
   max-width: 80vw;
   margin: auto;
