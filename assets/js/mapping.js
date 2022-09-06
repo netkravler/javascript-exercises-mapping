@@ -24,17 +24,11 @@ const data = [
   { id: 6, name: "Marie Curie", job: "kernefysiker", gender: "male" },
 ];
 
+//** array of objects containing people */
+
 const male = "https://www.w3schools.com/howto/img_avatar.png";
 
 const female = "https://www.w3schools.com/howto/img_avatar2.png";
-
-/*<figrue class="card">
-  <img src="img_avatar.png" alt="Avatar" style="width:100%">
-  <div class="container">
-    <h4><b>John Doe</b></h4>
-    <p>Architect & Engineer</p>
-  </div>
-</figure>*/
 
 const filterPerson = (id) => {
   //document.getElementById("mother").innerHTML = "";
@@ -44,6 +38,7 @@ const filterPerson = (id) => {
 
 const createElements = (data, father) => {
   document.getElementById("father").innerHTML = "";
+  //** clear father on every run of this function to fill in new data */
   let fig = document.createElement("figure");
   fig.setAttribute("class", "card");
   fig.setAttribute("id", data.id);
@@ -89,7 +84,8 @@ const createElement = (data) => {
   `;
 };
 
-data.map((person) => createElements(person));
+data.map((person) => createElement(person));
 //** map over every object in the data array */
 //** init the "app" with the first person in data array */
+
 filterPerson(data[0].id);
